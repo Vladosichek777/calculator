@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <p class="calculator__input-number">0</p>
+        <div class="calculator__line"></div>
+        <div class="calculator__inner-buttons">
+            <div class="buttons buttons--light buttons--up" id="specific" data-event="clean-all">AC</div>
+            <div class="buttons buttons--light" id="specific" data-event="add-minus-before">+/-</div>
+            <div class="buttons buttons--light" id="specific" data-event="percent">%</div>
+            <div class="buttons buttons--yellow" data-event="division">/</div>
+            <div class="buttons" id="specific">1</div>
+            <div class="buttons" id="specific">2</div>
+            <div class="buttons" id="specific">3</div>
+            <div class="buttons buttons--yellow" data-event="multiplication" data-js="*">*</div>
+            <div class="buttons" id="specific">4</div>
+            <div class="buttons" id="specific">5</div>
+            <div class="buttons" id="specific">6</div>
+            <div class="buttons buttons--yellow" data-event="minus">-</div>
+            <div class="buttons" id="specific">7</div>
+            <div class="buttons" id="specific">8</div>
+            <div class="buttons" id="specific">9</div>
+            <div class="buttons buttons--yellow" data-event="plus">+</div>
+            <div class="buttons buttons--big" id="specific">0</div>
+            <div class="buttons" id="specific">.</div>
+            <div class="buttons buttons--yellow" data-event="result">=</div>
+        </div>
+        <img class="calculator-theme" src="./moon.svg" alt="">
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
