@@ -1,14 +1,16 @@
-import changeTheme from "./theme.js";
+import changeTheme from "./src/js/theme.js";
 
 const buttons = document.querySelectorAll(".buttons");
 const inputArea = document.querySelector(".calculator__input-number");
 
 buttons.forEach((button) => {
+
   //For delete auto-copy of text
   button.addEventListener("mousedown", (e) => {
     e.preventDefault();
   });
-  button.addEventListener("click", (e) => {
+
+  button.addEventListener("click", () => {
     const arrOfSymbols = ["%", "/", "*", "-", "+"];
 
     //if we twice pressed button with symbol
@@ -22,6 +24,7 @@ buttons.forEach((button) => {
       flag = false;
       return;
     }
+    
     // IF we pressed AC
     if (button.dataset.event === "clean-all") {
       inputArea.innerHTML = 0;

@@ -3,10 +3,10 @@ function changeTheme() {
 
   const clearAllClasses = () => {
     buttonTheme.classList.remove("close-theme");
-    if (buttonTheme.getAttribute("src") === "./moon.svg") {
-      buttonTheme.setAttribute("src", "./sun.svg");
+    if (buttonTheme.getAttribute("src") === "./src/svg/moon.svg") {
+      buttonTheme.setAttribute("src", "./src/svg/sun.svg");
     } else {
-      buttonTheme.setAttribute("src", "./moon.svg");
+      buttonTheme.setAttribute("src", "./src/svg/moon.svg");
     }
     buttonTheme.classList.add("open-theme");
 
